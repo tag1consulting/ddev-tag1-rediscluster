@@ -19,7 +19,7 @@ This add-on integrates a **3-node Redis Cluster** into your [DDEV](https://ddev.
 ## Installation
 
 ```bash
-ddev add-on get ddev/ddev-redis
+ddev add-on get tag1consulting/ddev-tag1-rediscluster
 ddev restart
 ```
 
@@ -103,7 +103,7 @@ ddev restart
 To change the Envoy Docker image:
 
 ```bash
-ddev dotenv set .ddev/.env.redis --envoy-docker-image=envoyproxy/envoy:v1.28-latest
+ddev dotenv set .ddev/.env.redis --envoy-docker-image=envoyproxy/envoy:v1.37-latest
 ddev restart
 ```
 
@@ -121,7 +121,7 @@ Make sure to commit the `.ddev/.env.redis` file to version control.
 | Variable | Flag | Default |
 | -------- | ---- | ------- |
 | `REDIS_DOCKER_IMAGE` | `--redis-docker-image` | `redis:7` |
-| `ENVOY_DOCKER_IMAGE` | `--envoy-docker-image` | `envoyproxy/envoy:v1.28-latest` |
+| `ENVOY_DOCKER_IMAGE` | `--envoy-docker-image` | `envoyproxy/envoy:v1.37-latest` |
 | `ENVOY_HOSTNAME` | `--envoy-hostname` | `envoy` |
 
 ## Persistence and Data

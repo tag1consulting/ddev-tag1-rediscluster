@@ -2,7 +2,7 @@
 services:
   envoy:
     container_name: ddev-${DDEV_SITENAME}-envoy
-    image: ${ENVOY_DOCKER_IMAGE:-envoyproxy/envoy:v1.28-latest}
+    image: ${ENVOY_DOCKER_IMAGE:-envoyproxy/envoy:v1.37-latest}
     hostname: ${ENVOY_HOSTNAME:-envoy}
     # These labels ensure this service is discoverable by ddev.
     labels:
